@@ -66,6 +66,3 @@ Gracias a la instalacion podremos usar ese paquete desde cualquier proyecto
 o parte del ordenador.
 
 '''
-
-
-#VAMOS POR ESTE VIDEO: https://www.youtube.com/watch?v=V87m9SltcI8&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=37
