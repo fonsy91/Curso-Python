@@ -2,7 +2,7 @@
     CURSO INTRODUCTORIO DE PYTHON
 
     URL del curso: https://www.youtube.com/watch?v=VY448UWAQ_0&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=5
-    Compilacion y ejecucion: python3 nombreScrypt
+    Compilacion y ejecucion: python3 nombreScrypt o python nombreScrypt
 
 '''
 print("Mensaje por pantalla")
