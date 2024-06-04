@@ -30,3 +30,21 @@ print(textoEncontrado.end())
 print(textoEncontrado.span())
 # Nos devuelve todas las coincidencias si hay palabras iguales
 print(re.findall(textoBuscar,cadena))
+
+'''
+En las expresiones regulares tambien existen los metacaracteres 
+
+'''
+
+listaNombres = ["Ana Gómez","María Martín","Sandra Lopez","Santiago Martín"]
+
+# Obtenemos una lista cuyo nombre sea Ana con este caracter ^ busca la palabra 
+# que comienze con ese caracter
+for elemento in listaNombres:
+    if re.findall("^Ana", elemento):
+        print(elemento)
+
+# Tambien podemos usar el $ para buscar la palabra del final
+for elemento in listaNombres:
+    if re.findall("Lopez$", elemento):
+        print(elemento)
