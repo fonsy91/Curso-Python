@@ -48,3 +48,22 @@ for elemento in listaNombres:
 for elemento in listaNombres:
     if re.findall("Lopez$", elemento):
         print(elemento)
+
+'''
+Expresiones regulares los rangos nos permiten buscar elementos dentro de
+una lista que contenga un rango de caracteres, de numeros
+'''
+
+# '[o-t]' con esto indicamos que dentro de una lista nos devuelva 
+# todos aquellos cuyo interior hay un rango de letras comprendido entre la o y la t
+for elemento in listaNombres:
+    if re.findall('[o-t]', elemento):
+        print(elemento)
+
+# '^[O-T]' nos devuelve todos los nombres que empiecen por O o T
+for elemento in listaNombres:
+    if re.findall('^[O-T]', elemento):
+        print(elemento)
+
+# Ma[0-3] nos devuelve todas las palabras que empiecen po Ma y que despues tengan
+# un numero seguido de 0, 1 o 3
