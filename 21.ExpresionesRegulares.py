@@ -6,3 +6,27 @@ a un formato determinado (correo electronico), buscar si existe o no una
 cadena de caracteres dentro de un texto, contar el numero de coincidencias 
 dentro de un texto etc... 
 '''
+
+import re
+
+cadena = "Vamos a aprender expresiones regulares" 
+print(re.search("aprender",cadena)) # <re.Match object; span=(8, 16), match='aprender'>
+print(re.search("aprenderrrrr",cadena)) # None
+
+textoBuscar = "expresiones"
+
+if re.search(textoBuscar,cadena) is not None:
+    print("He ncontrado el texto")
+else:
+    print("No he encontrado el texto")
+
+# Otros metodos
+textoEncontrado = re.search(textoBuscar,cadena)
+# Nos devuelve el numero de caracter donde comienza la palabra
+print(textoEncontrado.start())
+# Nos devuelve el numero de caracter donde acaba la palabra
+print(textoEncontrado.end())
+# Nos devuelve ambos donde comienza y donde acaba en forma de tupla
+print(textoEncontrado.span())
+# Nos devuelve todas las coincidencias si hay palabras iguales
+print(re.findall(textoBuscar,cadena))
